@@ -465,6 +465,17 @@ img:hover { transform: scale(1.05); }
     background: #000;
     border: 2px solid #ff3131;
     box-shadow: 0 0 20px rgba(255, 49, 49, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 400px;
+}
+.vd-poster {
+    border: none !important;
+    outline: none !important;
+    max-width: 100%;
+    height: auto;
 }
 .vd-missing-img {
     padding: 60px 20px;
