@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Ultimate Gaming Hub</title>
     <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
 
@@ -15,6 +16,7 @@
         <button class="tab-btn" onclick="openGame(event, 'doa6')">Dead or Alive 6</button>
         <button class="tab-btn" onclick="openGame(event, 'tekken8')">Tekken 8</button>
         <button class="tab-btn" onclick="openGame(event, 'vd')">Vent Duty</button>
+        <button class="tab-btn" onclick="openGame(event, 'contact')">Contact Us</button>
     </nav>
 
     <div id="sf6" class="game-tab active">
@@ -160,67 +162,79 @@
     </div>
 
     <div id="doa6" class="game-tab">
-        <header>
-            <h1>Dead or Alive 6</h1>
-            <p>Dead or Alive 6 (DOA6) is a 3D fighting game developed by Team Ninja and Koei Tecmo. Known for its accessible "triangle system" (strikes beat throws, throws beat holds, holds beat strikes), it features fast-paced combat, stage hazards, and a revamped updated version called DOA6 Last Round.</p>
+        <header class="sf6-header">
+            <h1>Dead or Alive 6 Roster Profiles</h1>
         </header>
 
-        <section id="DOA6" class="doa6-char-card">
-        <div class="char-header">
-            <h2>Kasumi</h2>
-            <span><strong>The Kunoichi of Destiny</strong></span>
-        </div>
-        <div class="char-body">
-            <img src="Kasumi.jpg" class="doa-6-char-img">
-            <div class="char-details">
-                <p><strong>Description:</strong> Runaway shinobi and master of Mugen Tenshin ninjutsu. She fights to protect her clan while running from her past.</p>
-                <p>Insane frame speed, deadly mid-low mixups, and highly evasive teleports.</p>
-                <p><strong>Weakness:</strong> Low base strike damage; heavily reliant on basic strings which can become predictable.</p>
+        <p style="margin-bottom: 40px; line-height: 1.6;">Dead or Alive 6 (DOA6) is a 3D fighting game developed by Team Ninja and Koei Tecmo. Known for its accessible "triangle system" (strikes beat throws, throws beat holds, holds beat strikes), it features fast-paced combat, stage hazards, and a revamped updated version called DOA6 Last Round.</p>
+
+        <section class="sf6-char-card sf6-card">
+            <div class="char-header">
+                <h2>Kasumi</h2>
+                <span>The Kunoichi of Destiny</span>
             </div>
-        </div>
+            <div class="doa6-char-body">
+                <div class="sf6-char-img-wrap">
+                    <img src="Kasumi.jpg" alt="Kasumi" class="sf6-char-img" onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'color:#00f0ff\'>Kasumi Image</span>';">
+                </div>
+                <div class="sf6-char-info">
+                    <p class="desc-section"><strong>Description:</strong> Runaway shinobi and master of Mugen Tenshin ninjutsu. She fights to protect her clan while running from her past.</p>
+                    <p class="desc-section"><strong class="pro">Strengths:</strong> Insane frame speed, deadly mid-low mixups, and highly evasive teleports.</p>
+                    <p class="desc-section"><strong class="con">Weaknesses:</strong> Low base strike damage; heavily reliant on basic strings which can become predictable.</p>
+                </div>
+            </div>
         </section>
-        <section id="DOA6" class="doa6-char-card">
-    <div class="char-header">
-        <h2>Ryu Hayabusa</h2>
-        <span><strong>The Ultimate Ninja</strong></span>
-    </div>
-    <div class="char-body">
-        <img src="Hayabusa.jpg" class="doa6-char-img">
-        <div class="char-details">
-            <p><strong>Description:</strong> A legendary ninja warrior who commands the Hayabusa clan. He works from the shadows to maintain world balance.</p>
-            <p>Devastating Izuna Drop command grabs, excellent aerial mobility, and massive comeback potential.</p>
-            <p><strong>Weakness:</strong> High execution barrier; many heavy moves are risky and unsafe on block.</p>
-        </div>
-    </div>
-</section>
-         <section id="DOA6" class="doa6-char-card">
-    <div class="char-header">
-        <h2>Helena Douglas</h2>
-        <span><strong>The Fortune Goddess</strong></span>
-    </div>
-    <div class="char-body">
-        <img src="Helena.jpg" class="doa6-char-img">
-        <div class="char-details">
-            <p><strong>Description:</strong> The elegant president of DOATEC, who uses her Pi Qua Quan martial arts prowess to manage tournament corruption.</p>
-            <p>Low-profile Bokuho stance safely slips under high moves. Fluid, relentless pressure strings.</p>
-            <p><strong>Weakness:</strong> Weak tracking options against opponents who heavily utilize side-stepping.</p>
-        </div>
-    </div>
-</section>
-        <section id="DOA6" class="doa6-char-card">
-    <div class="char-header">
-        <h2>Momiji</h2>
-        <span><strong>The Shrine Maiden</strong></span>
-    </div>
-    <div class="char-body">
-        <img src="Momiji.jpg" class="doa-6char-img">
-        <div class="char-details">
-            <p><strong>Description:</strong> Ryu Hayabusa's apprentice and the Dragon Shrine Maiden tasked with protecting ancient, sacred relics.</p>
-            <p>Exceptional air juggling, unique double jump setups, and long-range spacing pokes.</p>
-            <p><strong>Weakness:</strong> Lacks fast close-range "panic button" strikes when cornered under pressure.</p>
-        </div>
-    </div>
-</section>
+
+        <section class="sf6-char-card sf6-card">
+            <div class="char-header">
+                <h2>Ryu Hayabusa</h2>
+                <span>The Ultimate Ninja</span>
+            </div>
+            <div class="doa6-char-body">
+                <div class="sf6-char-img-wrap">
+                    <img src="Hayabusa.jpg" alt="Ryu Hayabusa" class="sf6-char-img" onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'color:#00f0ff\'>Hayabusa Image</span>';">
+                </div>
+                <div class="sf6-char-info">
+                    <p class="desc-section"><strong>Description:</strong> A legendary ninja warrior who commands the Hayabusa clan. He works from the shadows to maintain world balance.</p>
+                    <p class="desc-section"><strong class="pro">Strengths:</strong> Devastating Izuna Drop command grabs, excellent aerial mobility, and massive comeback potential.</p>
+                    <p class="desc-section"><strong class="con">Weaknesses:</strong> High execution barrier; many heavy moves are risky and unsafe on block.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sf6-char-card sf6-card">
+            <div class="char-header">
+                <h2>Helena Douglas</h2>
+                <span>The Fortune Goddess</span>
+            </div>
+            <div class="doa6-char-body">
+                <div class="sf6-char-img-wrap">
+                    <img src="Helena.jpg" alt="Helena Douglas" class="sf6-char-img" onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'color:#00f0ff\'>Helena Image</span>';">
+                </div>
+                <div class="sf6-char-info">
+                    <p class="desc-section"><strong>Description:</strong> The elegant president of DOATEC, who uses her Pi Qua Quan martial arts prowess to manage tournament corruption.</p>
+                    <p class="desc-section"><strong class="pro">Strengths:</strong> Low-profile Bokuho stance safely slips under high moves. Fluid, relentless pressure strings.</p>
+                    <p class="desc-section"><strong class="con">Weaknesses:</strong> Weak tracking options against opponents who heavily utilize side-stepping.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sf6-char-card sf6-card">
+            <div class="char-header">
+                <h2>Momiji</h2>
+                <span>The Shrine Maiden</span>
+            </div>
+            <div class="doa6-char-body">
+                <div class="sf6-char-img-wrap">
+                    <img src="Momiji.jpg" alt="Momiji" class="sf6-char-img" onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'color:#00f0ff\'>Momiji Image</span>';">
+                </div>
+                <div class="sf6-char-info">
+                    <p class="desc-section"><strong>Description:</strong> Ryu Hayabusa's apprentice and the Dragon Shrine Maiden tasked with protecting ancient, sacred relics.</p>
+                    <p class="desc-section"><strong class="pro">Strengths:</strong> Exceptional air juggling, unique double jump setups, and long-range spacing pokes.</p>
+                    <p class="desc-section"><strong class="con">Weaknesses:</strong> Lacks fast close-range "panic button" strikes when cornered under pressure.</p>
+                </div>
+            </div>
+        </section>
         </div>
 
     <div id="tekken8" class="game-tab">
@@ -229,16 +243,73 @@
     <div id="vd" class="game-tab">
     </div>
 
+    <div id="contact" class="game-tab">
+        <header class="sf6-header">
+            <h1>Contact Us</h1>
+        </header>
+        
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+                <label for="validationName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="validationName" required placeholder="Enter your name">
+                <div class="invalid-feedback">Please provide your name.</div>
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="validationEmail" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="validationEmail" required placeholder="name@example.com">
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+                <div class="valid-feedback">Valid email structure!</div>
+            </div>
+
+            <div class="col-md-12">
+                <label for="validationSubject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="validationSubject" required placeholder="What's this about?">
+                <div class="invalid-feedback">Please enter a subject line.</div>
+                <div class="valid-feedback">Perfect.</div>
+            </div>
+
+            <div class="col-md-12">
+                <label for="validationMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="validationMessage" rows="5" required placeholder="Type your message here..."></textarea>
+                <div class="invalid-feedback">Please enter your message context.</div>
+                <div class="valid-feedback">Ready to send.</div>
+            </div>
+
+            <div class="col-12 mt-4 text-center">
+                <button class="tab-btn" type="submit" style="clip-path: none; border-radius: 4px;">Submit Form</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script>
         function openGame(evt, gameId) {
-            // Hide all tabs
             document.querySelectorAll('.game-tab').forEach(t => t.style.display = 'none');
-            // Remove active class from buttons
             document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            // Show selected tab
             document.getElementById(gameId).style.display = 'block';
             evt.currentTarget.classList.add('active');
         }
+
+        // Bootstrap Custom Form Validation Script
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        } else {
+                            alert('Form validated and submitted successfully!');
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
     </script>
 </body>
 </html>
