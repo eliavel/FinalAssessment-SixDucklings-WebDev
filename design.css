@@ -503,7 +503,6 @@ img:hover { transform: scale(1.05); }
     color: #ff3131;
 }
 
-/* Television Static Burst Overlay Config */
 .vd-static-overlay {
     position: absolute;
     top: 0;
