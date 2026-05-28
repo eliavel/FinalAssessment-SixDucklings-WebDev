@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ultimate Gaming Hub</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+
+    <h1><center>Ultimate Gaming Hub</center></h1>
+    <h4 style="text-align: center;">The Ultimate Gaming Hub Wiki is the definitive, community-driven knowledge base providing comprehensive guides, lore, and technical insights for gamers across all platforms and genres.</h4>
+    
+    <nav class="hub-nav">
+        <button class="tab-btn active" onclick="openGame(event, 'sf6')">Street Fighter 6</button>
+        <button class="tab-btn" onclick="openGame(event, 'doa6')">Dead or Alive 6</button>
+        <button class="tab-btn" onclick="openGame(event, 'tekken8')">Tekken 8</button>
+        <button class="tab-btn" onclick="openGame(event, 'vd')">Vent Duty</button>
+    </nav>
+
+    <div id="sf6" class="game-tab active">
+        <header class="sf6-header">
+            <h1>Street Fighter 6 Roster Profiles</h1>
+        </header>
+
+        <section id="about" class="game-overview">
+            <div class="game-desc">
+                <h2>The Ultimate Fighting Arena</h2>
+                <p><strong>Street Fighter 6</strong> represents the latest evolution of Capcom's iconic fighting franchise. Powered by the RE Engine, the game fuses classic 2D tactical combat with a high-energy, vibrant urban art style heavily influenced by street culture and hip-hop graffiti.</p>
+                <p>Whether exploring the sprawling single-player metro mode, hanging out in the virtual arcade lobbies, or competing on the global ranked ladder, the game offers a feature-rich experience engineered for both fighting game veterans and casual newcomers alike.</p>
+                
+                <div class="game-features">
+                    <div class="feature-box">
+                        <strong>The Drive Gauge System</strong>
+                        A multi-segmented meter managing tactical mechanics like Drive Impact, Drive Rush, Parries, and Overdrive arts.
+                    </div>
+                    <div class="feature-box">
+                        <strong>Accessible Controls</strong>
+                        Features classic 6-button layouts alongside streamlined Modern and Dynamic control configurations for easier execution.
+                    </div>
+                </div>
+            </div>
+            <img src="https://www.streetfighter.com/6/assets/images/index/mv_edition_bg.jpg" alt="Street Fighter 6 Art" class="game-poster" onerror="this.outerHTML='<div style=\'padding:20px;color:#ff007f;text-align:center;\'>[SF6 Game Art]</div>';">
+        </section>
+
+        <section id="luke" class="sf6-char-card sf6-card">
+            <div class="char-header">
+                <h2>Luke</h2>
+                <span>The Challenger of Tomorrow</span>
+            </div>
+            <div class="char-body">
+                <div class="sf6-char-img-wrap">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/d/d8/LukeSullivansfsix.png" alt="Luke" class="sf6-char-img" onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'color:#00f0ff\'>Luke Image</span>';">
+                </div>
+                <div class="sf6-char-info">
+                    <p class="desc-section"><strong>Description:</strong> A contractor for a private military company, Luke uses his elite MMA background to teach modern martial arts. He loves PC gaming, junk food, and a good scrap.</p>
+                    <p class="desc-section"><strong class="pro">Strengths:</strong> Phenomenal projectiles (Sand Blast), incredible corner carry, and highly optimal, consistent target combos.</p>
+                    <p class="desc-section"><strong class="con">Weaknesses:</strong> Perfect-timing requirements on his Flash Knuckle strings are mandatory for maximizing his damage output.</p>
+                    
+                    <table class="sf6-table">
+                        <tr><th>Move Name</th><th>Command</th><th>Type</th></tr>
+                        <tr><td>Sand Blast</td><td><code>236P</code></td><td>Fast Projectile</td></tr>
+                        <tr><td>Rising Rocket</td><td><code>623P</code></td><td>Anti-Air Uppercut</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="jamie" class="sf6-char-card sf6-card">
+            <div class="char-header">
+                <h2>Jamie</h2>
+                <span>The Chinatown Peacemaker</span>
+            </div>
+            <div class="char-body">
+                <div class="sf6-char-img-wrap">
+                    <img src="jamie.png" alt="Jamie" class="sf6-char-img" onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'color:#00f0ff\'>Jamie Image</span>';">
+                </div>
+                <div class="sf6-char-info">
+                    <p class="desc-section"><strong>Description:</strong> A breakdancing martial artist inspired by the legendary Twin Dragons. He defends his town with a specialized herbal drink that unlocks his true kung fu potential.</p>
+                    <p class="desc-section"><strong class="pro">Strengths:</strong> Gets progressively stronger throughout the round. Gated movesets unlock new target combos, command grabs, and divekicks.</p>
+                    <p class="desc-section"><strong class="con">Weaknesses:</strong> Starts at "Drink Level 0" with scaling penalties to his damage output, making his early-round pressure weak.</p>
+                    
+                    <table class="sf6-table">
+                        <tr><th>Move Name</th><th>Command</th><th>Type</th></tr>
+                        <tr><td>The Devil's Inside</td><td><code>22P</code></td><td>Drink Level Up</td></tr>
+                        <tr><td>Freeflow Strike</td><td><code>236P &gt; 6P &gt; 6P</code></td><td>Rekka Sequence</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="chunli" class="sf6-char-card sf6-card">
+            <div class="char-header">
+                <h2>Chun-Li</h2>
+                <span>The Blue Jade</span>
+            </div>
+            <div class="char-body">
+                <div class="sf6-char-img-wrap">
+                    <img src="https://static.wikia.nocookie.net/streetfighter/images/5/53/Chun-Li.png/revision/latest/scale-to-width/360?cb=20170927112136" alt="Chun-Li" class="sf6-char-img" onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'color:#00f0ff\'>Chun-Li Image</span>';">
+                </div>
+                <div class="sf6-char-info">
+                    <p class="desc-section"><strong>Description:</strong> A former Interpol investigator who now runs kung fu classes. She remains one of the strongest, most respected martial artists on the planet.</p>
+                    <p class="desc-section"><strong class="pro">Strengths:</strong> Mastery of neutral space, incredible mid-range pokes, and complex mixups utilizing her unique Serenity Stance.</p>
+                    <p class="desc-section"><strong class="con">Weaknesses:</strong> High execution barrier due to charge motions and stance-switching combos required to optimize her neutral wins.</p>
+                    
+                    <table class="sf6-table">
+                        <tr><th>Move Name</th><th>Command</th><th>Type</th></tr>
+                        <tr><td>Kikoken</td><td><code>[4]6P</code></td><td>Charge Projectile</td></tr>
+                        <tr><td>Serenity Stance</td><td><code>214K</code></td><td>Combo Utility Stance</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="juri" class="sf6-char-card sf6-card">
+            <div class="char-header">
+                <h2>Juri Han</h2>
+                <span>The Purple Thrill-Seeker</span>
+            </div>
+            <div class="char-body">
+                <div class="sf6-char-img-wrap">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/37/Juri.png" alt="Juri" class="sf6-char-img" onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'color:#00f0ff\'>Juri Image</span>';">
+                </div>
+                <div class="sf6-char-info">
+                    <p class="desc-section"><strong>Description:</strong> A sadistic Taekwondo practitioner who thrives on battle adrenaline. With the Feng Shui Engine gone, she fights purely for chaotic fun and personal gratification.</p>
+                    <p class="desc-section"><strong class="pro">Strengths:</strong> Incredible dash speed, top-tier Drive Rush momentum, and powerful spatial control using her Fuha stocks.</p>
+                    <p class="desc-section"><strong class="con">Weaknesses:</strong> Reliant on generating Fuha stocks to access her most oppressive special move extensions and combo enders.</p>
+                    
+                    <table class="sf6-table">
+                        <tr><th>Move Name</th><th>Command</th><th>Type</th></tr>
+                        <tr><td>Fuhajin</td><td><code>214K</code></td><td>Stock Resource Charge</td></tr>
+                        <tr><td>Saihasho</td><td><code>236K (With Stock)</code></td><td>Low-Profile Wave</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="ryu" class="sf6-char-card sf6-card">
+            <div class="char-header">
+                <h2>Ryu</h2>
+                <span>The Eternal Wanderer</span>
+            </div>
+            <div class="char-body">
+                <div class="sf6-char-img-wrap">
+                    <img src="https://www.streetfighter.com/6/assets/images/character/ryu/ryu.png" alt="Ryu" class="sf6-char-img" onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'color:#00f0ff\'>Ryu Image</span>';">
+                </div>
+                <div class="sf6-char-info">
+                    <p class="desc-section"><strong>Description:</strong> Having conquered the Satsui no Hado, Ryu continues to travel the globe dressed in a traditional hermit's kasaya, seeking the true meaning of strength.</p>
+                    <p class="desc-section"><strong class="pro">Strengths:</strong> Massive single-hit damage, a versatile fireball game, and lethal punish-counter combos with Hashogeki.</p>
+                    <p class="desc-section"><strong class="con">Weaknesses:</strong> Highly honest and fundamentally driven; lacks the wild, high-speed modern mixups of younger roster members.</p>
+                    
+                    <table class="sf6-table">
+                        <tr><th>Move Name</th><th>Command</th><th>Type</th></tr>
+                        <tr><td>Hadoken</td><td><code>236P</code></td><td>Standard Fireball</td></tr>
+                        <tr><td>Shoryuken</td><td><code>623P</code></td><td>Dragon Punch Invincible</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+
+    <div id="doa6" class="game-tab">
+        <header>
+            <h1>Dead or Alive 6</h1>
+            <p>Dead or Alive 6 (DOA6) is a 3D fighting game developed by Team Ninja and Koei Tecmo. Known for its accessible "triangle system" (strikes beat throws, throws beat holds, holds beat strikes), it features fast-paced combat, stage hazards, and a revamped updated version called DOA6 Last Round.</p>
+        </header>
+
+        <section id="DOA6" class="doa6-char-card">
+        <div class="char-header">
+            <h2>Kasumi</h2>
+            <span><strong>The Kunoichi of Destiny</strong></span>
+        </div>
+        <div class="char-body">
+            <img src="Kasumi.jpg" class="doa-6-char-img">
+            <div class="char-details">
+                <p><strong>Description:</strong> Runaway shinobi and master of Mugen Tenshin ninjutsu. She fights to protect her clan while running from her past.</p>
+                <p>Insane frame speed, deadly mid-low mixups, and highly evasive teleports.</p>
+                <p><strong>Weakness:</strong> Low base strike damage; heavily reliant on basic strings which can become predictable.</p>
+            </div>
+        </div>
+        </section>
+        <section id="DOA6" class="doa6-char-card">
+    <div class="char-header">
+        <h2>Ryu Hayabusa</h2>
+        <span><strong>The Ultimate Ninja</strong></span>
+    </div>
+    <div class="char-body">
+        <img src="Hayabusa.jpg" class="doa6-char-img">
+        <div class="char-details">
+            <p><strong>Description:</strong> A legendary ninja warrior who commands the Hayabusa clan. He works from the shadows to maintain world balance.</p>
+            <p>Devastating Izuna Drop command grabs, excellent aerial mobility, and massive comeback potential.</p>
+            <p><strong>Weakness:</strong> High execution barrier; many heavy moves are risky and unsafe on block.</p>
+        </div>
+    </div>
+</section>
+         <section id="DOA6" class="doa6-char-card">
+    <div class="char-header">
+        <h2>Helena Douglas</h2>
+        <span><strong>The Fortune Goddess</strong></span>
+    </div>
+    <div class="char-body">
+        <img src="Helena.jpg" class="doa6-char-img">
+        <div class="char-details">
+            <p><strong>Description:</strong> The elegant president of DOATEC, who uses her Pi Qua Quan martial arts prowess to manage tournament corruption.</p>
+            <p>Low-profile Bokuho stance safely slips under high moves. Fluid, relentless pressure strings.</p>
+            <p><strong>Weakness:</strong> Weak tracking options against opponents who heavily utilize side-stepping.</p>
+        </div>
+    </div>
+</section>
+        <section id="DOA6" class="doa6-char-card">
+    <div class="char-header">
+        <h2>Momiji</h2>
+        <span><strong>The Shrine Maiden</strong></span>
+    </div>
+    <div class="char-body">
+        <img src="Momiji.jpg" class="doa-6char-img">
+        <div class="char-details">
+            <p><strong>Description:</strong> Ryu Hayabusa's apprentice and the Dragon Shrine Maiden tasked with protecting ancient, sacred relics.</p>
+            <p>Exceptional air juggling, unique double jump setups, and long-range spacing pokes.</p>
+            <p><strong>Weakness:</strong> Lacks fast close-range "panic button" strikes when cornered under pressure.</p>
+        </div>
+    </div>
+</section>
+        </div>
+
+    <div id="tekken8" class="game-tab">
+    </div>
+
+    <div id="vd" class="game-tab">
+    </div>
+
+    <script>
+        function openGame(evt, gameId) {
+            // Hide all tabs
+            document.querySelectorAll('.game-tab').forEach(t => t.style.display = 'none');
+            // Remove active class from buttons
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            // Show selected tab
+            document.getElementById(gameId).style.display = 'block';
+            evt.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>

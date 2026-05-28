@@ -1,0 +1,290 @@
+/* --- Global Aesthetic --- */
+body {
+    background: radial-gradient(circle at center, #1a1a2e 0%, #0f0c1b 100%);
+    color: #e2e8f0;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* --- Interactive Navigation --- */
+.hub-nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(23, 18, 44, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 0, 127, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.tab-btn {
+    background: transparent;
+    color: #00f0ff;
+    border: 2px solid #00f0ff;
+    padding: 12px 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.tab-btn:hover, .tab-btn.active {
+    background: #ff007f;
+    color: #fff;
+    border-color: #ff007f;
+    box-shadow: 0 0 15px #ff007f;
+}
+
+/* --- Content Styling (Glassmorphism) --- */
+.game-tab {
+    display: none;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    background: rgba(29, 24, 58, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.game-tab.active { display: block; animation: fadeIn 0.8s ease-in-out; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Typography & Elements --- */
+h2 { color: #00f0ff; text-shadow: 0 0 10px #00f0ff; }
+
+/* Apply subtle glow to images */
+img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+img:hover { transform: scale(1.05); }
+
+/* ==========================================================================
+   Dead or Alive 6 Specific Styling
+   ========================================================================== */
+/* --- Character Card Layout --- */
+.doa6-char-body {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 25px;               /* Creates a clean space between the image and text */
+    margin-top: 15px;
+}
+
+.doa6-char-img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;          /* Prevents the image from shrinking */
+}
+
+.char-details {
+    flex: 1;                 /* Allows text to take up the remaining space */
+    line-height: 1.6;
+}
+
+.char-details p {
+    margin: 0 0 15px 0;      /* Cleans up spacing between paragraphs */
+}
+
+.char-details p:last-child {
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Street Fighter 6 Specific Styling
+   ========================================================================== */
+
+/* Header Typography */
+.sf6-header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgba(0, 240, 255, 0.2);
+    padding-bottom: 15px;
+}
+
+.sf6-header h1 {
+    font-style: italic;
+    text-shadow: 3px 3px #ff007f;
+    font-size: 36px;
+    margin: 0;
+}
+
+/* SF6 Game Overview */
+.game-overview {
+    background: linear-gradient(135deg, #1d183a 0%, #0f0c1b 100%);
+    border: 2px solid #ff007f;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    box-shadow: 0 0 20px rgba(255, 0, 127, 0.2);
+}
+
+.game-desc {
+    flex: 1;
+    min-width: 300px;
+}
+
+.game-desc h2 {
+    color: #00f0ff;
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.game-desc p {
+    line-height: 1.6;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+/* Feature Layout Blocks */
+.game-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.feature-box {
+    background: #17122c;
+    padding: 12px;
+    border-radius: 4px;
+    border-left: 3px solid #39ff14;
+    font-size: 13px;
+}
+
+.feature-box strong {
+    color: #39ff14;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.game-poster {
+    width: 280px;
+    height: 220px;
+    border-radius: 6px;
+    border: 2px solid #00f0ff;
+    object-fit: cover;
+    display: block;
+}
+
+/* Character Info Layouts */
+.sf6-card {
+    border-left: 6px solid #00f0ff;
+}
+
+.sf6-char-card {
+    background: #1d183a;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 40px;
+    border-left: 6px solid #00f0ff;
+    scroll-margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.sf6-char-img-wrap {
+    width: 180px;
+    height: 240px;
+    background: linear-gradient(to bottom, #17122c, #090615);
+    border: 2px solid #ff007f;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 5px;
+}
+
+.sf6-char-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.sf6-char-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* Pros and Cons Styling */
+.desc-section {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.desc-section strong {
+    color: #00f0ff;
+    display: block;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.desc-section strong.pro { color: #39ff14; }
+.desc-section strong.con { color: #ff3131; }
+
+/* Move Lists Tables */
+.sf6-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #17122c;
+    font-size: 13px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.sf6-table th, .sf6-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.sf6-table th {
+    background: #00f0ff;
+    color: #0f0c1b;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.sf6-table tr {
+    border-bottom: 1px solid #1d183a;
+}
+
+.sf6-table td code {
+    background: #0f0c1b;
+    color: #ff007f;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+/* Responsiveness adjustments for tab layout context */
+@media (max-width: 768px) {
+    .game-overview { flex-direction: column-reverse; }
+    .game-poster { width: 100%; height: 200px; }
+    .game-features { grid-template-columns: 1fr; }
+    .char-img-wrap { width: 100%; max-width: 240px; height: 300px; margin: 0 auto; }
+}
