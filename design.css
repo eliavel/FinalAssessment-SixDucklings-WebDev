@@ -282,6 +282,230 @@ img:hover { transform: scale(1.05); }
     font-family: monospace;
 }
 
+/* ==========================================================================
+   TEKKEN 8 GRAPHICS & INTERFACE DESIGN
+   ========================================================================== */
+.tekken8-header {
+    background: linear-gradient(135deg, #111 0%, #2a1a08 100%);
+    border-left: 5px solid #ffaa00;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.tekken8-header h1 {
+    color: #ffaa00;
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 0;
+}
+.t8-overview {
+    border-color: rgba(255, 170, 0, 0.3) !important;
+}
+.t8-feature {
+    border-left: 3px solid #ffaa00 !important;
+}
+.t8-poster {
+    border: 3px solid #ffaa00;
+    box-shadow: 0 0 15px rgba(255, 170, 0, 0.2);
+}
+.t8-filter-container {
+    background: #111;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #222;
+}
+.filter-label {
+    color: #888;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.filter-btn {
+    background: #222;
+    color: #ccc;
+    border: 1px solid #444;
+    padding: 6px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    border-radius: 2px;
+}
+.filter-btn:hover, .filter-btn.active {
+    background: #ffaa00;
+    color: #000;
+    border-color: #ffaa00;
+    box-shadow: 0 0 8px rgba(255, 170, 0, 0.4);
+}
+.t8-char-card {
+    background: #111;
+    border: 1px solid #222;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.t8-char-header {
+    background: linear-gradient(90deg, #1e150a, #111);
+    padding: 15px 20px;
+    border-bottom: 2px solid #ffaa00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.t8-char-header h2 {
+    color: #fff;
+    margin: 0;
+    font-size: 24px;
+}
+.t8-char-header span {
+    color: #ffaa00;
+    font-weight: bold;
+    font-style: italic;
+}
+.t8-char-body {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.t8-char-img-wrap {
+    width: 220px;
+    flex-shrink: 0;
+    background: #000;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+}
+.tekken8-char-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.t8-char-info {
+    flex-grow: 1;
+}
+.t8-label {
+    color: #ffaa00 !important;
+}
+.t8-table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    background: #0a0a0a;
+}
+.t8-table th {
+    background: #ffaa00;
+    color: #000;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.t8-table td {
+    padding: 10px;
+    border-bottom: 1px solid #222;
+    color: #eee;
+}
+.t8-table code {
+    background: #222;
+    color: #ffaa00;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+/* ==========================================================================
+   VENT DUTY HORROR MODULE THEMING & ANIMATIONS
+   ========================================================================== */
+.vd-horror-theme {
+    background: #050505 !important;
+    color: #999 !important;
+    position: relative;
+    border: 1px solid #1c0505;
+}
+.vd-header {
+    background: linear-gradient(180deg, #100505 0%, #050505 100%);
+    border-bottom: 2px solid #ff3131;
+    padding: 30px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.vd-header h1 {
+    color: #ff3131;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 49, 49, 0.6);
+    margin: 0;
+}
+.vd-subtitle {
+    color: #555;
+    font-family: monospace;
+    margin-top: 5px;
+}
+.vd-overview {
+    border-color: rgba(255, 49, 49, 0.15) !important;
+}
+.vd-story {
+    font-family: 'Courier New', Courier, monospace;
+    color: #b5a4a4;
+    line-height: 1.7;
+}
+.vd-feature {
+    background: #0a0202 !important;
+    border-left: 3px solid #ff3131 !important;
+    color: #aaa !important;
+    font-family: monospace;
+}
+.vd-poster-wrap {
+    background: #000;
+    border: 2px solid #ff3131;
+    box-shadow: 0 0 20px rgba(255, 49, 49, 0.1);
+}
+.vd-missing-img {
+    padding: 60px 20px;
+    color: #ff3131;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    background: #0a0000;
+}
+.vd-specs-panel {
+    display: flex;
+    justify-content: space-between;
+    background: #0a0202;
+    border: 1px solid #1c0505;
+    padding: 15px 20px;
+    margin-top: 30px;
+    border-radius: 4px;
+}
+.spec-node {
+    font-family: monospace;
+    font-size: 14px;
+    color: #666;
+}
+.spec-node strong {
+    color: #ff3131;
+}
+
+/* Television Static Burst Overlay Config */
+.vd-static-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbms1dXg3dzB5cmZ5bnd0Y3p5M3MwbzZ0bW91NmN4b3Z0Y2p5Y3g4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YRcXro9is96M1hZpNo/giphy.gif');
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 10;
+    display: none;
+}
+
 /* --- Bootstrap Color Overrides For Dark Theme --- */
 .form-control {
     background-color: #17122c !important;

@@ -237,10 +237,220 @@
         </section>
         </div>
 
-    <div id="tekken8" class="game-tab">
+    <div id="tekken8" class="game-tab" style="display: none;">
+        <header class="tekken8-header">
+            <h1>Tekken 8 Fighter Profiles</h1>
+        </header>
+
+        <section class="game-overview t8-overview">
+            <div class="game-desc">
+                <h2>The Aggressive Next-Gen Fighter</h2>
+                <p><strong>Tekken 8</strong> is the latest entry in Bandai Namco's legendary 3D fighting franchise. Built from the ground up on Unreal Engine 5, it introduces an entirely new gameplay philosophy centered around relentless, high-stakes aggression.</p>
+                
+                <div class="game-features">
+                    <div class="feature-box t8-feature">
+                        <strong>The Heat System</strong>
+                        A temporary power-up state accessible once per round that unlocks special extensions, chip damage, and devastating Heat Smashes.
+                    </div>
+                    <div class="feature-box t8-feature">
+                        <strong>Recoverable Gauge</strong>
+                        Attacking or blocking while under high-pressure scenarios leaves behind "grey health" that can be aggressively clawed back by striking the opponent.
+                    </div>
+                </div>
+            </div>
+            <img src="TEKKEN8_Header_mobile_2.jpg" alt="Tekken 8 Art" class="game-poster t8-poster" onerror="this.outerHTML='<div style=\'padding:40px;color:#ffaa00;text-align:center;border:2px dashed #ffaa00;\'>[Tekken 8 Key Art]</div>';">
+        </section>
+
+        <div class="t8-filter-container">
+            <span class="filter-label">Select Combatant:</span>
+            <button class="filter-btn active" onclick="filterT8Char(event, 'all')">All</button>
+            <button class="filter-btn" onclick="filterT8Char(event, 'jin')">Jin</button>
+            <button class="filter-btn" onclick="filterT8Char(event, 'kazuya')">Kazuya</button>
+            <button class="filter-btn" onclick="filterT8Char(event, 'reina')">Reina</button>
+            <button class="filter-btn" onclick="filterT8Char(event, 'king')">King</button>
+            <button class="filter-btn" onclick="filterT8Char(event, 'lili')">Lili</button>
+        </div>
+
+        <section id="t8-jin" class="t8-char-card">
+            <div class="t8-char-header">
+                <h2>Jin Kazama</h2>
+                <span>Lightning of Fate</span>
+            </div>
+            <div class="t8-char-body">
+                <div class="t8-char-img-wrap">
+                    <img src="JIN_new.webp" alt="Jin Kazama" class="tekken8-char-img" onerror="this.outerHTML='<div style=\'color:#ffaa00; font-weight:bold;\'>Jin Image Missing</div>';">
+                </div>
+                <div class="t8-char-info">
+                    <p class="desc-section"><strong class="t8-label">Description:</strong> Seeking to destroy the Mishima bloodline curse, Jin has finally learned to harness his Devil powers actively alongside traditional Kazama-style martial arts.</p>
+                    <p class="desc-section"><strong class="pro">Strengths:</strong> Incredible elite-tier neutral control, versatile pokes, and an amazing, safe Heat Smash.</p>
+                    <p class="desc-section"><strong class="con">Weaknesses:</strong> Requires solid execution fundamentals and strong spacing mastery to break turtle defenses.</p>
+                    
+                    <table class="t8-table">
+                        <thead>
+                            <tr><th>Move Name</th><th>Command</th><th>Properties</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Electric Wind Hook Fist</td><td><code>f,n,d,df+2</code></td><td>+5g on Block / Launcher</td></tr>
+                            <tr><td>Demon's Paw</td><td><code>f,f+2</code></td><td>Mid / Power Crush / Heat Engager</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="t8-kazuya" class="t8-char-card">
+            <div class="t8-char-header">
+                <h2>Kazuya Mishima</h2>
+                <span>The Cold-Blooded Oppressor</span>
+            </div>
+            <div class="t8-char-body">
+                <div class="t8-char-img-wrap">
+                     <img src="Kazuya-Mishima_new.webp" alt="Kazuya Mishima" class="tekken8-char-img" onerror="this.outerHTML='<div style=\'color:#ffaa00; font-weight:bold;\'>Kazuya Image Missing</div>';">
+                </div>
+                <div class="t8-char-info">
+                    <p class="desc-section"><strong class="t8-label">Description:</strong> Now running G Corporation as a ruthless global dictator, Kazuya seeks complete dominance using his unholy Devil Gene.</p>
+                    <p class="desc-section"><strong class="pro">Strengths:</strong> Legendary 50/50 mixups from wavedash, highly lethal block punishes, and unparalleled comeback damage.</p>
+                    <p class="desc-section"><strong class="con">Weaknesses:</strong> Completely lacks panic-button escape attacks; heavily reliant on pristine player execution.</p>
+                    
+                    <table class="t8-table">
+                        <thead>
+                            <tr><th>Move Name</th><th>Command</th><th>Properties</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Electric Wind God Fist</td><td><code>f,n,d,df+2</code></td><td>+5rd on Block / High Launcher</td></tr>
+                            <tr><td>Hellsweep (Spinning Demon)</td><td><code>f,n,d,df+4,4</code></td><td>High-risk / High-reward Knockdown Low</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="t8-reina" class="t8-char-card">
+            <div class="t8-char-header">
+                <h2>Reina</h2>
+                <span>The Purple Lightning</span>
+            </div>
+            <div class="t8-char-body">
+                <div class="t8-char-img-wrap">
+                     <img src="Reina_new.webp" alt="Reina" class="tekken8-char-img" onerror="this.outerHTML='<div style=\'color:#ffaa00; font-weight:bold;\'>Reina Image Missing</div>';">
+                </div>
+                <div class="t8-char-info">
+                    <p class="desc-section"><strong class="t8-label">Description:</strong> A mysterious student at the Mishima Polytechnic who utilizes brutal Mishima-style karate combined with agile Taido gymnastics.</p>
+                    <p class="desc-section"><strong class="pro">Strengths:</strong> Phenomenal offensive pressure, highly evasive stance shifts, and unmatched corner carry potential.</p>
+                    <p class="desc-section"><strong class="con">Weaknesses:</strong> Many of her best pressure strings can be ducked or sidestepped if you become too predictable.</p>
+                    
+                    <table class="t8-table">
+                        <thead>
+                            <tr><th>Move Name</th><th>Command</th><th>Properties</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Wind God Fist</td><td><code>f,n,d,df+2</code></td><td>High Launcher / Stance Transition</td></tr>
+                            <tr><td>Sentai Stance</td><td><code>f+3 or after specials</code></td><td>Forward dash stance mixup options</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="t8-king" class="t8-char-card">
+            <div class="t8-char-header">
+                <h2>King</h2>
+                <span>The Anger of the Beast</span>
+            </div>
+            <div class="t8-char-body">
+                <div class="t8-char-img-wrap">
+                    <img src="King_new.webp" alt="King" class="tekken8-char-img" onerror="this.outerHTML='<div style=\'color:#ffaa00; font-weight:bold;\'>King Image Missing</div>';">
+                </div>
+                <div class="t8-char-info">
+                    <p class="desc-section"><strong class="t8-label">Description:</strong> A world-renowned masked luchador who fights to support his orphanage, using a terrifying blend of high-flying maneuvers and power grappling.</p>
+                    <p class="desc-section"><strong class="pro">Strengths:</strong> Unmatched command grab damage, incredible counter-hit tools, and highly oppressive mental tracking games.</p>
+                    <p class="desc-section"><strong class="con">Weaknesses:</strong> Struggles significantly when forced onto the back foot or kept at a distance by zoning/keep-away characters.</p>
+                    
+                    <table class="t8-table">
+                        <thead>
+                            <tr><th>Move Name</th><th>Command</th><th>Properties</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Giant Swing</td><td><code>f,hcf+1</code></td><td>Ultra-fast Command Throw / Huge Damage</td></tr>
+                            <tr><td>Muscle Buster</td><td><code>qcb+1+2</code></td><td>Highly effective mixup throw with no wall danger</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="t8-lili" class="t8-char-card">
+            <div class="t8-char-header">
+                <h2>Lili Rochefort</h2>
+                <span>The Elegant Fighter</span>
+            </div>
+            <div class="t8-char-body">
+                <div class="t8-char-img-wrap">
+                   <img src="tekken8-character-lili.jpg" alt="Lili Rochefort" class="tekken8-char-img" onerror="this.outerHTML='<div style=\'color:#ffaa00; font-weight:bold;\'>Lili Image Missing</div>';">
+                </div>
+                <div class="t8-char-info">
+                    <p class="desc-section"><strong class="t8-label">Description:</strong> A glamorous heiress from Monaco who hides a street-fighting addiction beneath her refined exterior. Her self-taught style blends fluid gymnastics with graceful, high-altitude dancing steps.</p>
+                    <p class="desc-section"><strong class="pro">Strengths:</strong> Best sidestep evasion in the game, highly oppressive back-turned mixups, and excellent long-range poke reach.</p>
+                    <p class="desc-section"><strong class="con">Weaknesses:</strong> Several of her heavy combo starters are highly unsafe on block and leave her vulnerable to punish counters.</p>
+                    
+                    <table class="t8-table">
+                        <thead>
+                            <tr><th>Move Name</th><th>Command</th><th>Properties</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Alstroemeria</td><td><code>d/f+3+4</code></td><td>High-evasion Launcher / Stance Switch</td></tr>
+                            <tr><td>Feisty Rabbit</td><td><code>u/b+3 or u/b+4</code></td><td>Evasive spin / Feint and mixup option</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <div id="vd" class="game-tab">
+    <div id="vd" class="game-tab vd-horror-theme" style="display: none;">
+        <div id="vd-jumpscare-overlay" class="vd-static-overlay"></div>
+
+        <header class="vd-header">
+            <h1>Vent Duty</h1>
+            <p class="vd-subtitle">Survival Horror | National Teachers College</p>
+        </header>
+
+        <section class="game-overview vd-overview">
+            <div class="game-desc">
+                <h2>The Nightmare in the Vents</h2>
+                <p class="vd-story">
+                    You are a lone janitor tasked by your boss to complete a routine cleaning assignment inside the ventilation shafts of the National Teachers College. 
+                    What started as a simple shift plunges into absolute terror. The shafts open into a messy, twisting, and relentlessly creepy dark labyrinth. 
+                    Your only directive: <strong>Survive as much as you can.</strong>
+                </p>
+                
+                <div class="game-features vd-features">
+                    <div class="feature-box vd-feature">
+                        <strong>🔊 The Whistle Mechanism</strong>
+                        Use your whistle as a desperate distraction to lure the monster away from your location—or accidentally seal your doom if timed poorly.
+                    </div>
+                    <div class="feature-box vd-feature">
+                        <strong>🧠 Crippling Anxiety Gauge</strong>
+                        Checking your map is crucial for navigation, but doing so rapidly increases your anxiety. Hit maximum anxiety, and your map will lock completely, leaving you blind in the dark.
+                    </div>
+                    <div class="feature-box vd-feature">
+                        <strong>⚡ Node Activation</strong>
+                        Locate and manually activate all structural power nodes hidden within the dark room, dodge the lurking entity, and hunt for the exit line.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="vd-poster-wrap">
+                <img src="MrPerminiola.png" alt="Vent of Duty Cover" class="game-poster vd-poster" onerror="this.outerHTML='<div class=\'vd-missing-img\'>⚠️ TRANSMISSION LOST <br> [Game Cover Missing]</div>';">
+            </div>
+        </section>
+
+        <div class="vd-specs-panel">
+            <div class="spec-node"><strong>DEVELOPER:</strong> SixDucklings</div>
+            <div class="spec-node"><strong>PLATFORM:</strong> PC</div>
+            <div class="spec-node"><strong>GENRE:</strong> Horror</div>
+            <div class="spec-node"><strong>LAUNCH:</strong> TBA</div>
+        </div>
     </div>
 
     <div id="contact" class="game-tab">
@@ -248,31 +458,31 @@
             <h1>Contact Us</h1>
         </header>
         
-        <form class="row g-3 needs-validation" novalidate>
+        <form action="contact.php" method="POST" class="row g-3 needs-validation" novalidate>
             <div class="col-md-6">
                 <label for="validationName" class="form-label">Name</label>
-                <input type="text" class="form-control" id="validationName" required placeholder="Enter your name">
+                <input type="text" class="form-control" name="name" id="validationName" required placeholder="Enter your name">
                 <div class="invalid-feedback">Please provide your name.</div>
                 <div class="valid-feedback">Looks good!</div>
             </div>
 
             <div class="col-md-6">
                 <label for="validationEmail" class="form-label">Email Address</label>
-                <input type="email" class="form-control" id="validationEmail" required placeholder="name@example.com">
+                <input type="email" class="form-control" name="email" id="validationEmail" required placeholder="name@example.com">
                 <div class="invalid-feedback">Please provide a valid email address.</div>
                 <div class="valid-feedback">Valid email structure!</div>
             </div>
 
             <div class="col-md-12">
                 <label for="validationSubject" class="form-label">Subject</label>
-                <input type="text" class="form-control" id="validationSubject" required placeholder="What's this about?">
+                <input type="text" class="form-control" name="subject" id="validationSubject" required placeholder="What's this about?">
                 <div class="invalid-feedback">Please enter a subject line.</div>
                 <div class="valid-feedback">Perfect.</div>
             </div>
 
             <div class="col-md-12">
                 <label for="validationMessage" class="form-label">Message</label>
-                <textarea class="form-control" id="validationMessage" rows="5" required placeholder="Type your message here..."></textarea>
+                <textarea class="form-control" name="message" id="validationMessage" rows="5" required placeholder="Type your message here..."></textarea>
                 <div class="invalid-feedback">Please enter your message context.</div>
                 <div class="valid-feedback">Ready to send.</div>
             </div>
